@@ -1,24 +1,15 @@
 buildscript {
     repositories {
         mavenCentral()
-        maven {
-            url 'https://maven.google.com/'
-            name 'Google'
-        }
-        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.0'
+        classpath 'com.android.tools.build:gradle:2.2.0'
     }
 }
 apply plugin: 'com.android.application'
 
 repositories {
     mavenCentral()
-    maven {
-        url 'https://maven.google.com/'
-        name 'Google'
-    }
 }
 
 android {
@@ -28,6 +19,14 @@ android {
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 25
+    }
+    buildTypes {
+        debug {
+            renderscriptDebuggable = true
+        }
+        release {
+            renderscriptDebuggable = true
+        }
     }
 }
 
