@@ -13,5 +13,4 @@ This application gets RSS News From Uadcity and show details
 * [Ok Http](https://github.com/square/okhttp) client for Android and Java applications.
 * [Glide](https://github.com/bumptech/glide) as image loader.
 
-# Copyright
-Copyright Hazem Madkour
+
